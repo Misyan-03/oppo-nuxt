@@ -1,0 +1,86 @@
+// @use "./variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #000;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+// 版心
+.w {
+  width: $contentWidth;
+  margin: 0 auto;
+}
+
+.text-truncate {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.border {
+  @include border();
+}
+
+.border-top {
+  @include borderTop();
+}
+
+.border-bottom {
+  @include borderTop();
+}
+
+.border-left {
+  @include borderTop();
+}
+
+.border-right {
+  @include borderTop();
+}
+
+.app-card-hover {
+  transition: all 0.4s ease;
+}
+
+// 卡片hover效果
+.app-card-hover:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+  transform: translateY(-2px);
+}
+
+// 文本溢出隐藏
+.text-overflow-hide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+// 禁止选中
+.no-select {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
