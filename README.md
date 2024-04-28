@@ -1,3 +1,5 @@
+![Github Repo Size](https://img.shields.io/github/repo-size/Misyan-03/oppo-nuxt?style=plastic)
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
